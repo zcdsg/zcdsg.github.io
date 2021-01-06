@@ -9,7 +9,7 @@
     
     <title>
         
-            网易云 |
+            markdown基本语法(.md) |
         
         Z
     </title>
@@ -116,7 +116,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">网易云</span>
+            <span class="title-hover-animation">markdown基本语法(.md)</span>
         </div>
 
         
@@ -132,7 +132,7 @@
                     <div class="meta-info">
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
-        <i class="fas fa-calendar"></i> 2021-01-06 10:45:07
+        <i class="fas fa-calendar"></i> 2021-01-06 12:58:53
     </span>
     
     
@@ -149,7 +149,79 @@
         
 
         <div class="article-content markdown-body">
-            
+            <h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><hr>
+<ul>
+<li><p>语法格式: # 标题 (#号后面需跟空格)</p>
+</li>
+<li><p>#是一号字体 对应html中的h1标签<br>  ##是二号字体 对应html中的h2标签<br>  ###是二号字体 对应html中的h3标签<br>  以此类推…</p>
+</li>
+<li><p>效果如下:</p>
+<h1 id="我是"><a href="#我是" class="headerlink" title="我是#"></a>我是#</h1><h2 id="我是-1"><a href="#我是-1" class="headerlink" title="我是##"></a>我是##</h2><h3 id="我是-2"><a href="#我是-2" class="headerlink" title="我是###"></a>我是###</h3></li>
+<li><p>还可以使用:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">标题</span><br><span class="line">===</span><br><span class="line"></span><br><span class="line">或者</span><br><span class="line"></span><br><span class="line">标题</span><br><span class="line">----</span><br></pre></td></tr></table></figure></li>
+<li><p>效果如下:</p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="  标题"></a>  标题</h1><h2 id="标题-1"><a href="#标题-1" class="headerlink" title="  标题"></a>  标题</h2></li>
+</ul>
+<hr>
+<h2 id="2-列表"><a href="#2-列表" class="headerlink" title="2.列表"></a>2.列表</h2><hr>
+<ul>
+<li><p>分为有序列表及无序列表</p>
+</li>
+<li><p>有序列表语法格式: 使用 数字+英文.号</p>
+<ol>
+<li>正文1</li>
+<li>正文2</li>
+<li>正文3</li>
+</ol>
+</li>
+<li><p>有序列表效果:<br>  1.有序列表1<br>  2.有序列表2<br>  5.有序列表5<br>  3.有序列表3</p>
+</li>
+<li><p>无序列表语法格式: 使用 *, +, - 来创建. 推荐使用 * 正文的方式</p>
+<ul>
+<li>本博文通篇使用无序列表</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-区块引用"><a href="#3-区块引用" class="headerlink" title="3.区块引用"></a>3.区块引用</h2><hr>
+<ul>
+<li>语法格式:<br>  使用 &gt; 我有一个梦想 ——马丁路德金<br>  , &gt;&gt; 我有两个梦想 ——马丁路德银<br>  , &gt;&gt;&gt; 我有三个梦想 ——马丁路德铜<br>  (去掉逗号)<br>  效果分别如下:<blockquote>
+<p>我有一个梦想 ——马丁路德金</p>
+<blockquote>
+<p>我有两个梦想 ——马丁路德银</p>
+<blockquote>
+<p>我有三个梦想 ——马丁路德铜</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<!-- 
+> ## 3.1区块引用
+>  * 区块引用新办法
+> > 区块 -->
+</li>
+</ul>
+<hr>
+<h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4.分割线"></a>4.分割线</h2><ul>
+<li>分割线可以由* - _（星号，减号，底线）这3个符号的至少3个符号表示，注意至少要3个，且不需要连续，有空格也可以</li>
+</ul>
+<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5.链接"></a>5.链接</h2><ul>
+<li>分为行内式与参数式</li>
+<li>行内式格式(方括号中的行内式、参数式可随意替换): <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用 [行内式](url)</span><br></pre></td></tr></table></figure></li>
+<li>效果如下:<br>  <a class="link"   target="_blank" rel="noopener" href="http://leanote.shaoyafan.top/api/file/getImage?fileId=5ff541478f5f542f3e00003c" >参数式测试<i class="fas fa-external-link-alt"></i></a></li>
+<li>参数式格式(方括号中的行内式、参数式可随意替换): <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">使用 [参数式]:url 来定义</span><br><span class="line">使用 [参数式] 来使用</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>效果如下:<br>  [参数式]</li>
+</ul>
+<h2 id="6-图片"><a href="#6-图片" class="headerlink" title="6.图片"></a>6.图片</h2><ul>
+<li>与链接的方式大致相同</li>
+<li>行内式(方括号中的行内式、参数式可随意替换):<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">图片使用 ![行内式](url)</span><br></pre></td></tr></table></figure></li>
+<li>参数式(方括号中的行内式、参数式可随意替换):<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">图片的参数定义是 [参数式]:url, 与定义链接相同, 但使用图片是 ![参数式]</span><br></pre></td></tr></table></figure>
+<h3 id="7-强调、删除线"><a href="#7-强调、删除线" class="headerlink" title="7.强调、删除线"></a>7.强调、删除线</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">_字体倾斜_</span><br><span class="line">__字体加粗__</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></li>
+<li>效果如下:<br><em>字体倾斜</em><br><strong>字体加粗</strong><br><del>删除线</del></li>
+</ul>
+
         </div>
 
         
@@ -157,29 +229,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                           rel="prev"
-                           href="/2021/01/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8A%80%E8%83%BD%E7%AF%87/"
-                        >
-                            <span class="left arrow-icon flex-center" >
-                              <i class="fas fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex-center">
-                                <span class="post-nav-title-item">博客搭建(技能篇)</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2021/01/06/hello-world/"
+                           href="/2021/01/06/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-%E6%8A%80%E8%83%BD%E7%AF%87/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">博客搭建(技能篇)</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex-center" >
